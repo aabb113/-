@@ -1,0 +1,914 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport"
+			content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.css" rel="stylesheet" />
+		<link href="css/main.css" rel="stylesheet" />
+		<link href="css/iconfont.css" rel="stylesheet" />
+		<style>
+			* {
+				touch-action: none;
+			}
+			.liBox {
+				border: 2px solid #B1804f;
+				border-radius: 12px;
+				margin: 10px;
+
+				/* 	padding: 5px; */
+				margin-left: 10px;
+			}
+
+			.imgBox {
+				width: 60%;
+			}
+
+			.btnExhibition {
+				background-color: #00522E;
+				height: 20px;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<!--头部-->
+
+		<header class="mui-bar mui-bar-nav">
+			<div id="DIY" class="mui-pull-left">
+				<span class="mui-pull-left">开始DIY我的展厅！</span>
+			</div>
+			<a class="mui-pull-right " href="explain.html">
+				<span class="iconfont icon-erji mui-icon"></span>
+
+			</a>
+
+		</header>
+
+		<!--主体-->
+		<!--轮播图-->
+		<div id="slider" class="mui-slider">
+			<div class="mui-slider-group mui-slider-loop">
+				<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="images/preset1.jpg" width:100% height:100%>
+					</a>
+				</div>
+				<!-- 第一张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="images/preset2.jpg" width:100% height:100%>
+					</a>
+				</div>
+				<!-- 第二张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="images/preset3.jpg" width:100% height:100%>
+					</a>
+				</div>
+				<!-- 第三张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="images/preset2.jpg" width:100% height:100%>
+					</a>
+				</div>
+				<!-- 第四张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="images/preset1.jpg" width:100% height:100%>
+					</a>
+				</div>
+				<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="images/preset1.jpg" width:100%>
+					</a>
+				</div>
+			</div>
+			<div class="mui-slider-indicator">
+				<div class="mui-indicator mui-active"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+			</div>
+		</div>
+		<div class="button">
+			<button type="button" class="mui-btn mui-icon mui-pull-left">
+				<a href="share.html" style="color: black;">查看他人DIY</a>
+			</button>
+			<button type="button" class="mui-btn iconfont icon-ziliao mui-icon mui-pull-right">
+				<!-- 我的方案 -->
+				<a href="mine.html" style="color: black;">我的方案</a>
+			</button>
+
+		</div>
+		<!--左侧选项卡-->
+		<div id="leftCard" class="mui-content mui-row">
+			<div class="mui-col-xs-3 mui-fullscreen " style="height: 400px;">
+				<!-- 分段控制 -->
+				<div id="segmentedControls"
+					class="mui-segmented-control mui-segmented-control-inverted mui-segmented-control-vertical">
+					<a class="mui-control-item mui-active" href="#content1">预设 </a>
+					<a class="mui-control-item" href="#content2">展厅 </a>
+					<a class="mui-control-item" href="#content3">家具 </a>
+				</div>
+			</div>
+			<!-- 分段控制的内容 -->
+			<div id="segmentedControlContents" class="mui-col-xs-9" style="border-left: 1px solid #c8c7cc;">
+				<div id="content1" class="mui-control-content mui-active">
+					<div id="scroll1" class="mui-scroll-wrapper" style="height: 400px;z-index: 0;">
+						<div class="mui-scroll">
+
+							<ul class="mui-table-view liBox">
+								<li class="mui-table-view-cell exhibition">
+									<div class="imgBox"><img class=" mui-pull-left" src="./images/preset1.jpg"
+											width="100%">
+									</div>
+									<div class="mui-media">
+										预设1
+									</div>
+								</li>
+							</ul>
+
+							<ul class="mui-table-view liBox">
+								<li class="mui-table-view-cell exhibition">
+									<div class="imgBox"><img class=" mui-pull-left" src="./images/preset2.jpg"
+											width="100%">
+									</div>
+									<div class="mui-media">
+										预设2
+									</div>
+								</li>
+							</ul>
+
+							<ul class="mui-table-view liBox">
+								<li class="mui-table-view-cell exhibition">
+									<div class="imgBox"><img class=" mui-pull-left" src="./images/preset3.jpg"
+											width="100%">
+									</div>
+									<div class="mui-media">
+										预设3
+									</div>
+								</li>
+							</ul>
+
+							<ul class="mui-table-view liBox">
+								<li class="mui-table-view-cell exhibition">
+									<div class="imgBox"><img class=" mui-pull-left" src="./images/preset3.jpg"
+											width="100%">
+									</div>
+									<div class="mui-media">
+										预设3
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div id="content2" class="mui-control-content">
+					<div id="scroll1" class="mui-scroll-wrapper" style="height: 400px;z-index: 0;">
+						<div class="mui-scroll">
+							<!-- mui.css第18个 -->
+							<ul class="mui-table-view liBox">
+								<li class="mui-table-view-cell exhibition">
+									<div class="imgBox"><img class=" mui-pull-left" src="./images/3x3.jpg "
+											width="100%"></div>
+									<div class="mui-media">
+										展厅1
+									</div>
+
+									<button type="button" class="mui-btn mui-pull-right btnExhibition">
+										<a href="#moreBox1" style="color: white;">+</a>
+									</button>
+
+								</li>
+
+							</ul>
+
+							<ul class="mui-table-view liBox">
+								<li class="mui-table-view-cell exhibition">
+									<div class="imgBox"><img class=" mui-pull-left" src="./images/6x6.jpg "
+											width="100%"></div>
+									<div class="mui-media">
+										展厅2
+									</div>
+									<button type="button" class="mui-btn mui-pull-right btnExhibition">
+										<a href="#moreBox2" style="color: white;">+</a>
+									</button>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div id="content3" class="mui-control-content">
+					<div id="scroll1" class="mui-scroll-wrapper" style="height: 400px;z-index: 0;">
+						<div class="mui-scroll">
+							<ul class="mui-table-view liBox">
+								<li class="mui-table-view-cell exhibition">
+									<div class="imgBox"><img class=" mui-pull-left" src="./images/sofa1.png"
+											width="100%"></div>
+									<div class="mui-media">
+										沙发
+									</div>
+									<button type="button" class="mui-btn mui-pull-right btnChose">
+										<a href="#sofa" style="color: white;">选规格</a>
+									</button>
+								</li>
+
+							</ul>
+
+							<ul class="mui-table-view liBox">
+								<li class="mui-table-view-cell exhibition">
+									<div class="imgBox"><img class=" mui-pull-left" src="./images/desk1.png"
+											width="100%"></div>
+									<div class="mui-media">
+										椅子
+									</div>
+									<button type="button" class="mui-btn mui-pull-right btnChose">
+										<a href="#chair" style="color: white;">选规格</a>
+									</button>
+								</li>
+							</ul>
+
+							<ul class="mui-table-view liBox">
+								<li class="mui-table-view-cell exhibition">
+									<div class="imgBox"><img class=" mui-pull-left" src="./images/desk3.png"
+											width="100%"></div>
+									<div class="mui-media">
+										桌子
+									</div>
+									<button type="button" class="mui-btn mui-pull-right btnChose">
+										<a href="#desk" style="color: white;">选规格</a>
+									</button>
+								</li>
+							</ul>
+
+
+							<ul class="mui-table-view liBox">
+								<li class="mui-table-view-cell exhibition">
+									<div class="imgBox"><img class=" mui-pull-left" src="./images/guizi1.jpg"
+											width="100%">
+									</div>
+									<div class="mui-media">
+										柜子
+									</div>
+									<button type="button" class="mui-btn mui-pull-right btnChose">
+										<a href="#cabinet" style="color: white;">选规格</a>
+									</button>
+								</li>
+							</ul>
+
+							</br>
+							</br>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+		<!-- 弹出家具选择框 -->
+		<div id="moreBox1" class="mui-popover mui-popover-action mui-popover-bottom">
+			<ul class="mui-table-view liBox">
+				<li class="mui-table-view-cell">
+					<div class="mui-pull-left" style=" width: 45%; height: 100px;border: 2px solid #00522E;" >
+						<img src="./images/line1.jpg" alt="沙发1" width="100%" height="100%">
+					</div>
+					<div class="mui-pull-right" style="width: 45%; height: 100px; border: 2px solid #00522E;">
+						<img src="./images/line2.jpg" alt="沙发1" width="100%" height="100%">
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div id="moreBox2" class="mui-popover mui-popover-action mui-popover-bottom">
+			<ul class="mui-table-view liBox">
+				<li class="mui-table-view-cell">
+					<div class="mui-pull-left" style=" width: 45%; height: 100px;border: 2px solid #00522E;" >
+						<img src="./images/line3.png" alt="沙发1" width="100%" height="100%">
+					</div>
+					<div class="mui-pull-right" style="width: 45%; height: 100px;border: 2px solid #00522E;">
+						<img src="./images/line4.png" alt="沙发1" width="100%" height="100%">
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div id="sofa" class="mui-popover mui-popover-action mui-popover-bottom">
+			<ul class="mui-table-view liBox">
+				<li class="mui-table-view-cell">
+					<div class="leftThings mui-pull-left">
+						<img src="./images/sofa1.png" alt="椅子1" width="100%" height="100%">
+					</div>
+					<div class="rightThings mui-pull-right">
+						<span class="mui-pull-left">椅子1</span>
+						<div class="mui-numbox mui-pull-right numBtn" style="width: 100px;height: 30px;"
+							data-numbox-min='0' data-numbox-max='9'>
+							<button class="mui-btn-numbox-minus" type="button">-</button>
+							<input id="btnsofa1" class="mui-input-numbox" type="number" />
+							<button class="mui-btn-numbox-plus" type="button">+</button>
+						</div>
+					</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<div class="leftThings mui-pull-left">
+						<img src="./images/sofa2.png" alt="椅子2" width="100%" height="100%">
+					</div>
+					<div class="rightThings mui-pull-right">
+						<span class="mui-pull-left">椅子2</span>
+						<div class="mui-numbox mui-pull-right numBtn" style="width: 100px;height: 30px;"
+							data-numbox-min='0' data-numbox-max='9'>
+							<button class="mui-btn-numbox-minus" type="button">-</button>
+							<input id="btnsofa2" class="mui-input-numbox" type="number" />
+							<button class="mui-btn-numbox-plus" type="button">+</button>
+						</div>
+					</div>
+				</li>
+				</br>
+				</br>
+			</ul>
+		</div>
+
+		<div id="chair" class="mui-popover mui-popover-action mui-popover-bottom">
+			<ul class="mui-table-view liBox">
+				<li class="mui-table-view-cell">
+					<div class="leftThings mui-pull-left">
+						<img src="./images/desk1.png" alt="椅子1" width="100%" height="100%">
+					</div>
+					<div class="rightThings mui-pull-right">
+						<span class="mui-pull-left">椅子1</span>
+						<div class="mui-numbox mui-pull-right numBtn" style="width: 100px;height: 30px;"
+							data-numbox-min='0' data-numbox-max='9'>
+							<button class="mui-btn-numbox-minus" type="button">-</button>
+							<input id="btnchair1" class="mui-input-numbox" type="number" />
+							<button class="mui-btn-numbox-plus" type="button">+</button>
+						</div>
+					</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<div class="leftThings mui-pull-left">
+						<img src="./images/desk2.png" alt="椅子2" width="100%" height="100%">
+					</div>
+					<div class="rightThings mui-pull-right">
+						<span class="mui-pull-left">椅子2</span>
+						<div class="mui-numbox mui-pull-right numBtn" style="width: 100px;height: 30px;"
+							data-numbox-min='0' data-numbox-max='9'>
+							<button class="mui-btn-numbox-minus" type="button">-</button>
+							<input id="btnchair2" class="mui-input-numbox" type="number" />
+							<button class="mui-btn-numbox-plus" type="button">+</button>
+						</div>
+					</div>
+				</li>
+				</br>
+				</br>
+			</ul>
+		</div>
+
+		<div id="desk" class="mui-popover mui-popover-action mui-popover-bottom">
+			<ul class="mui-table-view liBox">
+				<li class="mui-table-view-cell">
+					<div class="leftThings mui-pull-left">
+						<img src="./images/desk3.png" alt="桌子1" width="100%" height="100%">
+					</div>
+					<div class="rightThings mui-pull-right">
+						<span class="mui-pull-left">桌子1</span>
+						<div class="mui-numbox mui-pull-right numBtn" style="width: 100px;height: 30px;"
+							data-numbox-min='0' data-numbox-max='9'>
+							<button class="mui-btn-numbox-minus" type="button">-</button>
+							<input id="btndesk1" class="mui-input-numbox" type="number" />
+							<button class="mui-btn-numbox-plus" type="button">+</button>
+						</div>
+					</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<div class="leftThings mui-pull-left">
+						<img src="./images/desk4.png" alt="桌子2" width="100%" height="100%">
+					</div>
+					<div class="rightThings mui-pull-right">
+						<span class="mui-pull-left">桌子2</span>
+						<div class="mui-numbox mui-pull-right numBtn" style="width: 100px;height: 30px;"
+							data-numbox-min='0' data-numbox-max='9'>
+							<button class="mui-btn-numbox-minus" type="button">-</button>
+							<input id="btndesk2" class="mui-input-numbox" type="number" />
+							<button class="mui-btn-numbox-plus" type="button">+</button>
+						</div>
+					</div>
+				</li>
+				</br>
+				</br>
+			</ul>
+		</div>
+
+		<div id="cabinet" class="mui-popover mui-popover-action mui-popover-bottom">
+			<ul class="mui-table-view liBox">
+				<li class="mui-table-view-cell">
+					<div class="leftThings mui-pull-left">
+						<img src="./images/guizi1.jpg" alt="柜子1" width="100%" height="100%">
+					</div>
+					<div class="rightThings mui-pull-right">
+						<span class="mui-pull-left">柜子1</span>
+						<div class="mui-numbox mui-pull-right numBtn" style="width: 100px;height: 30px;"
+							data-numbox-min='0' data-numbox-max='9'>
+							<button class="mui-btn-numbox-minus" type="button">-</button>
+							<input id="btncabinet1" class="mui-input-numbox" type="number" />
+							<button class="mui-btn-numbox-plus" type="button">+</button>
+						</div>
+					</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<div class="leftThings mui-pull-left">
+						<img src="./images/guizi2.jpg" alt="柜子2" width="100%" height="100%">
+					</div>
+					<div class="rightThings mui-pull-right">
+						<span class="mui-pull-left">柜子2</span>
+						<div class="mui-numbox mui-pull-right numBtn" style="width: 100px;height: 30px;"
+							data-numbox-min='0' data-numbox-max='9'>
+							<button class="mui-btn-numbox-minus" type="button">-</button>
+							<input id="btncabinet2" class="mui-input-numbox" type="number" />
+							<button class="mui-btn-numbox-plus" type="button">+</button>
+						</div>
+					</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<div class="leftThings mui-pull-left">
+						<img src="./images/guizi3.jpg" alt="柜子3" width="100%" height="100%">
+					</div>
+					<div class="rightThings mui-pull-right">
+						<span class="mui-pull-left">柜子3</span>
+						<div class="mui-numbox mui-pull-right numBtn" style="width: 100px;height: 30px;"
+							data-numbox-min='0' data-numbox-max='9'>
+							<button class="mui-btn-numbox-minus" type="button">-</button>
+							<input id="btncabinet3" class="mui-input-numbox" type="number" />
+							<button class="mui-btn-numbox-plus" type="button">+</button>
+						</div>
+					</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<div class="leftThings mui-pull-left">
+						<img src="./images/guizi4.jpg" alt="柜子4" width="100%" height="100%">
+					</div>
+					<div class="rightThings mui-pull-right">
+						<span class="mui-pull-left">柜子4</span>
+						<div class="mui-numbox mui-pull-right numBtn" style="width: 100px;height: 30px;"
+							data-numbox-min='0' data-numbox-max='9'>
+							<button class="mui-btn-numbox-minus" type="button">-</button>
+							<input id="btncabinet4" class="mui-input-numbox" type="number" />
+							<button class="mui-btn-numbox-plus" type="button">+</button>
+						</div>
+					</div>
+				</li>
+				</br>
+				</br>
+			</ul>
+		</div>
+
+		<!-- 已选择菜单 -->
+		<div id="chosed" class="mui-popover mui-popover-action mui-popover-bottom btnChosed">
+			<div class="mui-table-view-cell mui-media" style="background-color: white;">
+				<a id="backMain" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"
+					href="#chosed"><span>返回</span></a>
+			</div>
+			<div id="slider" class="mui-slider mui-fullscreen" style="background-color:white;height: 500px;z-index: 0;">
+				<div id="sliderSegmentedControl"
+					class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted"
+					style="background-color: white;">
+					<div class="mui-scroll">
+						<a class="mui-control-item mui-active" href="#item1mobile">
+							全部
+						</a>
+						<a class="mui-control-item" href="#item2mobile">
+							沙发
+						</a>
+						<a class="mui-control-item" href="#item3mobile">
+							椅子
+						</a>
+						<a class="mui-control-item" href="#item4mobile">
+							桌子
+						</a>
+						<a class="mui-control-item" href="#item5mobile">
+							展柜
+						</a>
+					</div>
+				</div>
+				<div class="mui-slider-group">
+					<!-- 全部 -->
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active"
+						style="background-color: white;">
+						<div id="scroll1" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul id="allList" class="mui-table-view" style="background-color: white;">
+									<li id="sofa_List1" class="mui-table-view-cell liBox">
+										<div class="leftThings mui-pull-left">
+											<img src="./images/sofa1.png" alt="沙发1" width="100%" height="100%">
+										</div>
+										<div class="rightThings mui-pull-right">
+											<span class="mui-pull-left">沙发1</span>
+											<div class="mui-numbox mui-pull-right numBtn"
+												style="width: 100px;height: 30px;">
+												<button class="mui-btn-numbox-minus" type="button">-</button>
+												<input id="val_Sofa1" class="mui-input-numbox" type="number" />
+												<button id="addSofa1" class="mui-btn-numbox-plus"
+													type="button">+</button>
+											</div>
+										</div>
+									</li>
+									<li id="sofa_List2" class="mui-table-view-cell liBox">
+										<div class="leftThings mui-pull-left">
+											<img src="./images/sofa2.png" alt="沙发2" width="100%" height="100%">
+										</div>
+										<div class="rightThings mui-pull-right">
+											<span class="mui-pull-left">沙发2</span>
+											<div class="mui-numbox mui-pull-right numBtn"
+												style="width: 100px;height: 30px;">
+												<button class="mui-btn-numbox-minus" type="button">-</button>
+												<input id="val_Sofa2" class="mui-input-numbox" type="number" />
+												<button id="addSofa2" class="mui-btn-numbox-plus"
+													type="button">+</button>
+											</div>
+										</div>
+									</li>
+									<li id="chair_List1" class="mui-table-view-cell liBox">
+										<div class="leftThings mui-pull-left">
+											<img src="./images/desk1.png" alt="椅子1" width="100%" height="100%">
+										</div>
+										<div class="rightThings mui-pull-right">
+											<span class="mui-pull-left">椅子1</span>
+											<div class="mui-numbox mui-pull-right numBtn"
+												style="width: 100px;height: 30px;">
+												<button class="mui-btn-numbox-minus" type="button">-</button>
+												<input id="val_Chair1" class="mui-input-numbox" type="number" />
+												<button class="mui-btn-numbox-plus" type="button">+</button>
+											</div>
+										</div>
+									</li>
+									<li id="chair_List2" class="mui-table-view-cell liBox">
+										<div class="leftThings mui-pull-left">
+											<img src="./images/desk2.png" alt="椅子2" width="100%" height="100%">
+										</div>
+										<div class="rightThings mui-pull-right">
+											<span class="mui-pull-left">椅子2</span>
+											<div class="mui-numbox mui-pull-right numBtn"
+												style="width: 100px;height: 30px;">
+												<button class="mui-btn-numbox-minus" type="button">-</button>
+												<input id="val_Chair2" class="mui-input-numbox" type="number" />
+												<button class="mui-btn-numbox-plus" type="button">+</button>
+											</div>
+										</div>
+									</li>
+									<li id="desk_List1" class="mui-table-view-cell liBox">
+										<div class="leftThings mui-pull-left">
+											<img src="./images/desk3.png" alt="桌子1" width="100%" height="100%">
+										</div>
+										<div class="rightThings mui-pull-right">
+											<span class="mui-pull-left">桌子1</span>
+											<div class="mui-numbox mui-pull-right numBtn"
+												style="width: 100px;height: 30px;">
+												<button class="mui-btn-numbox-minus" type="button">-</button>
+												<input id="val_Desk1" class="mui-input-numbox" type="number" />
+												<button class="mui-btn-numbox-plus" type="button">+</button>
+											</div>
+										</div>
+									</li>
+									<li id="desk_List2" class="mui-table-view-cell liBox">
+										<div class="leftThings mui-pull-left">
+											<img src="./images/desk4.png" alt="桌子2" width="100%" height="100%">
+										</div>
+										<div class="rightThings mui-pull-right">
+											<span class="mui-pull-left">桌子2</span>
+											<div class="mui-numbox mui-pull-right numBtn"
+												style="width: 100px;height: 30px;">
+												<button class="mui-btn-numbox-minus" type="button">-</button>
+												<input id="val_Desk2" class="mui-input-numbox" type="number" />
+												<button class="mui-btn-numbox-plus" type="button">+</button>
+											</div>
+										</div>
+									</li>
+									<li id="cabinet_List1" class="mui-table-view-cell liBox">
+										<div class="leftThings mui-pull-left">
+											<img src="./images/guizi1.jpg" alt="柜子1" width="100%" height="100%">
+										</div>
+										<div class="rightThings mui-pull-right">
+											<span class="mui-pull-left">柜子1</span>
+											<div class="mui-numbox mui-pull-right numBtn"
+												style="width: 100px;height: 30px;">
+												<button class="mui-btn-numbox-minus" type="button">-</button>
+												<input id="val_Cabinet1" class="mui-input-numbox" type="number" />
+												<button class="mui-btn-numbox-plus" type="button">+</button>
+											</div>
+										</div>
+									</li>
+									<li id="cabinet_List2" class="mui-table-view-cell liBox">
+										<div class="leftThings mui-pull-left">
+											<img src="./images/guizi2.jpg" alt="柜子2" width="100%" height="100%">
+										</div>
+										<div class="rightThings mui-pull-right">
+											<span class="mui-pull-left">柜子2</span>
+											<div class="mui-numbox mui-pull-right numBtn"
+												style="width: 100px;height: 30px;">
+												<button class="mui-btn-numbox-minus" type="button">-</button>
+												<input id="val_Cabinet2" class="mui-input-numbox" type="number" />
+												<button class="mui-btn-numbox-plus" type="button">+</button>
+											</div>
+										</div>
+									</li>
+									<li id="cabinet_List3" class="mui-table-view-cell liBox">
+										<div class="leftThings mui-pull-left">
+											<img src="./images/guizi3.jpg" alt="柜子3" width="100%" height="100%">
+										</div>
+										<div class="rightThings mui-pull-right">
+											<span class="mui-pull-left">柜子3</span>
+											<div class="mui-numbox mui-pull-right numBtn"
+												style="width: 100px;height: 30px;">
+												<button class="mui-btn-numbox-minus" type="button">-</button>
+												<input id="val_Cabinet3" class="mui-input-numbox" type="number" />
+												<button class="mui-btn-numbox-plus" type="button">+</button>
+											</div>
+										</div>
+									</li>
+									<li id="cabinetList4" class="mui-table-view-cell liBox">
+										<div class="leftThings mui-pull-left">
+											<img src="./images/guizi4.jpg" alt="柜子4" width="100%" height="100%">
+										</div>
+										<div class="rightThings mui-pull-right">
+											<span class="mui-pull-left">柜子4</span>
+											<div class="mui-numbox mui-pull-right numBtn"
+												style="width: 100px;height: 30px;" data-numbox-min='0'
+												data-numbox-max='9'>
+												<button class="mui-btn-numbox-minus" type="button">-</button>
+												<input id="valCabinet4" class="mui-input-numbox" type="number" />
+												<button class="mui-btn-numbox-plus" type="button">+</button>
+											</div>
+										</div>
+									</li>
+									</br>
+									</br>
+									</br>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- 沙发 -->
+					<div id="item2mobile" class="mui-slider-item mui-control-content" style="background-color: white;">
+						<div id="scroll1" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul id="sofaList" class="mui-table-view" style="background-color: white;">
+									<li id="sofaList1" class="mui-table-view-cell liBox">
+										<div class="leftThings mui-pull-left">
+											<img src="./images/sofa1.png" alt="沙发1" width="100%" height="100%">
+										</div>
+										<div class="rightThings mui-pull-right">
+											<span class="mui-pull-left">沙发1</span>
+											<div class="mui-numbox mui-pull-right numBtn"
+												style="width: 100px;height: 30px;">
+												<button class="mui-btn-numbox-minus" type="button">-</button>
+												<input id="valSofa1" class="mui-input-numbox" type="number" />
+												<button id="addSofa1" class="mui-btn-numbox-plus"
+													type="button">+</button>
+											</div>
+										</div>
+									</li>
+									<li id="sofaList2" class="mui-table-view-cell liBox">
+										<div class="leftThings mui-pull-left">
+											<img src="./images/sofa2.png" alt="沙发2" width="100%" height="100%">
+										</div>
+										<div class="rightThings mui-pull-right">
+											<span class="mui-pull-left">沙发2</span>
+											<div class="mui-numbox mui-pull-right numBtn"
+												style="width: 100px;height: 30px;">
+												<button class="mui-btn-numbox-minus" type="button">-</button>
+												<input id="valSofa2" class="mui-input-numbox" type="number" />
+												<button id="addSofa2" class="mui-btn-numbox-plus"
+													type="button">+</button>
+											</div>
+										</div>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- 椅子 -->
+					<div id="item3mobile" class="mui-slider-item mui-control-content" style="background-color: white;">
+						<div id="scroll1" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul class="mui-table-view">
+									<li id="chairList1" class="mui-table-view-cell liBox">
+										<div class="leftThings mui-pull-left">
+											<img src="./images/desk1.png" alt="椅子1" width="100%" height="100%">
+										</div>
+										<div class="rightThings mui-pull-right">
+											<span class="mui-pull-left">椅子1</span>
+											<div class="mui-numbox mui-pull-right numBtn"
+												style="width: 100px;height: 30px;">
+												<button class="mui-btn-numbox-minus" type="button">-</button>
+												<input id="valChair1" class="mui-input-numbox" type="number" />
+												<button class="mui-btn-numbox-plus" type="button">+</button>
+											</div>
+										</div>
+									</li>
+									<li id="chairList2" class="mui-table-view-cell liBox">
+										<div class="leftThings mui-pull-left">
+											<img src="./images/desk2.png" alt="椅子2" width="100%" height="100%">
+										</div>
+										<div class="rightThings mui-pull-right">
+											<span class="mui-pull-left">椅子2</span>
+											<div class="mui-numbox mui-pull-right numBtn"
+												style="width: 100px;height: 30px;">
+												<button class="mui-btn-numbox-minus" type="button">-</button>
+												<input id="valChair2" class="mui-input-numbox" type="number" />
+												<button class="mui-btn-numbox-plus" type="button">+</button>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- 桌子 -->
+					<div id="item4mobile" class="mui-slider-item mui-control-content" style="background-color: white;">
+						<div id="scroll1" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul class="mui-table-view">
+									<li id="deskList1" class="mui-table-view-cell liBox">
+										<div class="leftThings mui-pull-left">
+											<img src="./images/desk3.png" alt="桌子1" width="100%" height="100%">
+										</div>
+										<div class="rightThings mui-pull-right">
+											<span class="mui-pull-left">桌子1</span>
+											<div class="mui-numbox mui-pull-right numBtn"
+												style="width: 100px;height: 30px;">
+												<button class="mui-btn-numbox-minus" type="button">-</button>
+												<input id="valDesk1" class="mui-input-numbox" type="number" />
+												<button class="mui-btn-numbox-plus" type="button">+</button>
+											</div>
+										</div>
+									</li>
+									<li id="deskList2" class="mui-table-view-cell liBox">
+										<div class="leftThings mui-pull-left">
+											<img src="./images/desk4.png" alt="桌子2" width="100%" height="100%">
+										</div>
+										<div class="rightThings mui-pull-right">
+											<span class="mui-pull-left">桌子2</span>
+											<div class="mui-numbox mui-pull-right numBtn"
+												style="width: 100px;height: 30px;">
+												<button class="mui-btn-numbox-minus" type="button">-</button>
+												<input id="valDesk2" class="mui-input-numbox" type="number" />
+												<button class="mui-btn-numbox-plus" type="button">+</button>
+											</div>
+										</div>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- 展柜 -->
+					<div id="item5mobile" class="mui-slider-item mui-control-content" style="background-color: white;">
+						<div id="scroll1" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul class="mui-table-view" style="background-color: white;">
+									<li id="cabinetList1" class="mui-table-view-cell liBox">
+										<div class="leftThings mui-pull-left">
+											<img src="./images/guizi1.jpg" alt="柜子1" width="100%" height="100%">
+										</div>
+										<div class="rightThings mui-pull-right">
+											<span class="mui-pull-left">柜子1</span>
+											<div class="mui-numbox mui-pull-right numBtn"
+												style="width: 100px;height: 30px;">
+												<button class="mui-btn-numbox-minus" type="button">-</button>
+												<input id="valCabinet1" class="mui-input-numbox" type="number" />
+												<button class="mui-btn-numbox-plus" type="button">+</button>
+											</div>
+										</div>
+									</li>
+									<li id="cabinetList2" class="mui-table-view-cell liBox">
+										<div class="leftThings mui-pull-left">
+											<img src="./images/guizi2.jpg" alt="柜子2" width="100%" height="100%">
+										</div>
+										<div class="rightThings mui-pull-right">
+											<span class="mui-pull-left">柜子2</span>
+											<div class="mui-numbox mui-pull-right numBtn"
+												style="width: 100px;height: 30px;">
+												<button class="mui-btn-numbox-minus" type="button">-</button>
+												<input id="valCabinet2" class="mui-input-numbox" type="number" />
+												<button class="mui-btn-numbox-plus" type="button">+</button>
+											</div>
+										</div>
+									</li>
+									<li id="cabinetList3" class="mui-table-view-cell liBox">
+										<div class="leftThings mui-pull-left">
+											<img src="./images/guizi3.jpg" alt="柜子3" width="100%" height="100%">
+										</div>
+										<div class="rightThings mui-pull-right">
+											<span class="mui-pull-left">柜子3</span>
+											<div class="mui-numbox mui-pull-right numBtn"
+												style="width: 100px;height: 30px;">
+												<button class="mui-btn-numbox-minus" type="button">-</button>
+												<input id="valCabinet3" class="mui-input-numbox" type="number" />
+												<button class="mui-btn-numbox-plus" type="button">+</button>
+											</div>
+										</div>
+									</li>
+									<li id="cabinetList4" class="mui-table-view-cell liBox">
+										<div class="leftThings mui-pull-left">
+											<img src="./images/guizi4.jpg" alt="柜子4" width="100%" height="100%">
+										</div>
+										<div class="rightThings mui-pull-right">
+											<span class="mui-pull-left">柜子4</span>
+											<div class="mui-numbox mui-pull-right numBtn"
+												style="width: 100px;height: 30px;">
+												<button class="mui-btn-numbox-minus" type="button">-</button>
+												<input id="valCabinet4" class="mui-input-numbox" type="number" />
+												<button class="mui-btn-numbox-plus" type="button">+</button>
+											</div>
+										</div>
+									</li>
+									</br>
+									</br>
+									</br>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="container">
+				<div id="bottomCard" class="mui-bar-tab mui-pull-left">
+					<a class="mui-tab-item " href="#" style="color: grey;">
+						<span class="iconfont icon-jiaju-sofa mui-icon "></span>
+					</a>
+					<a class="mui-tab-item" href="#" style="color: grey;">
+						<span class="iconfont icon-jiaju-yizi mui-icon"></span>
+					</a>
+					<a class="mui-tab-item" href="#" style="color: grey;">
+						<span class="iconfont icon-jiaju-desk mui-icon"></span>
+					</a>
+					<a class="mui-tab-item" href="#" style="color: grey;">
+						<span class="iconfont icon-jiaju mui-icon"></span>
+					</a>
+
+				</div>
+
+				<div id="bottomCardok2" class=" mui-bar-tab mui-pull-left bottomCardok">
+					<a href="made.html">
+						<span class="mui-tab-label">&nbsp&nbsp选好了</span>
+					</a>
+
+				</div>
+			</div>
+		</div>
+		<!-- 已选择选项框 -->
+
+
+
+
+		<!-- 底部选项卡 -->
+		<div class="container">
+			<div id="bottomCard" class="mui-bar-tab mui-pull-left">
+				<a class="mui-tab-item " href="#" style="color: grey;">
+					<span class="iconfont icon-jiaju-sofa mui-icon "></span>
+					<span id="sumSofa" class="mui-badge mui-badge-warning">3</span>
+				</a>
+				<a class="mui-tab-item" href="#" style="color: grey;">
+					<span class="iconfont icon-jiaju-yizi mui-icon"></span>
+				</a>
+				<a class="mui-tab-item" href="#" style="color: grey;">
+					<span class="iconfont icon-jiaju-desk mui-icon"></span>
+				</a>
+				<a class="mui-tab-item" href="#" style="color: grey;">
+					<span class="iconfont icon-jiaju mui-icon"></span>
+				</a>
+
+			</div>
+
+			<div id="bottomCardok1" class=" mui-bar-tab mui-pull-left bottomCardok">
+				<a class="" href="#chosed">
+					<span class="mui-tab-label">&nbsp&nbsp已选择</span>
+				</a>
+
+			</div>
+		</div>
+
+		<script src="js/mui.js"></script>
+		<script src="js/tabbar.js"></script>
+		<script src="js/jquery.js"></script>
+		<script src="js/btn.js"></script>
+		<script src="js/load.js"></script>
+
+		<script type="text/javascript">
+			mui.init();
+			//获取当前文档轮播图组件对象
+			var sliderObj = mui("#slider");
+			sliderObj.slider({
+					interval: 5000
+				}),
+				mui('.mui-scroll-wrapper').scroll({});
+		</script>
+	</body>
+
+</html>

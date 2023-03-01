@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport"
+			content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.css" rel="stylesheet" />
+		<link href="css/main.css" rel="stylesheet" />
+		<style>
+			#explain_page{
+				margin-top: 20px;
+				margin-left: 20px;
+				margin-right: 20px;
+				height: 450px;
+				width: 90%;
+				background-image: url("images/1.png");
+				background-size: 100% 100%;
+			}
+			#back{
+				margin-left: 155px;
+				position:relative;
+				top:350px;
+			}
+			.mui-icon-left-nav{
+				color:#024127;
+				font-size: 0.1%;
+			}
+			#aboutUs{
+				position: relative;
+				top:20px;
+				margin-left: 30px;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="mui-content mui-row mui-fullscreen">
+			<div id="explain_page">
+				<div id="aboutUs">
+					<span ><font color="grey" size="0.875rem">关于我们</font></span><br>
+					<span><font color="grey" size="0.875rem">about us</font></span>
+				</div>
+				<div id="back">
+					<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="Corrugatedpaper_index.html"></a>
+				</div>
+			</div>
+			
+		</div>
+		<script src="js/mui.js"></script>
+		<script>
+			mui.init({
+				swipeBack: true //启用右滑关闭功能
+			});
+		</script>
+	</body>
+
+</html>

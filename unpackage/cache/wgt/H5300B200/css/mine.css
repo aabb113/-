@@ -1,0 +1,48 @@
+.mui-icon-left-nav {
+	color: #B1804f;
+}
+
+.borderClass {
+	border: 2px solid #B1804f;
+	border-radius: 12px;
+}
+
+.leftBox {
+
+	padding: 10px 10px 10px 10px;
+	height: 200px;
+	width: 50%;
+	/* background-color: aqua; */
+}
+
+.containerBox {
+	margin: 10px;
+	background-color: #fff;
+	padding: 10px;
+	width: 95%;
+	height: 220px;
+}
+
+.containerBox .rightBox {
+
+	/* 	background-color: #B1804f; */
+	width: 45%;
+	height: 150px;
+	float: right;
+	margin-top: -200px;
+}
+
+.rightBox .mui-table-view {
+	background-color: transparent;
+}
+
+.spanFont {
+	font-size: 2px;
+}
+
+.rightBox .btnClass {
+	position: relative;
+	width: 100%;
+	background-color: #00522E;
+	margin-top: 30px;
+}

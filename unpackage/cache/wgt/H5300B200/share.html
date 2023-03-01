@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport"
+			content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.css" rel="stylesheet" />
+
+		<link href="css/iconfont.css" rel="stylesheet" />
+		<style>
+			* {
+				touch-action: none;
+			}
+		</style>
+		<style type="text/css">
+			/* 修改返回光标的颜色 */
+			.mui-icon-left-nav {
+				color: #B1804f;
+			}
+
+			.sharContent {
+				background-color: white;
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				bottom: 0;
+				border-radius: 15px 15px 0px 0px;
+			}
+
+			.shareBox {
+				width: 95%;
+				height: 180px;
+				/* 	background-color: aqua; */
+				margin: 10px;
+				border: 2px solid #B1804f;
+				border-radius: 12px;
+				padding: 0px;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<!--头部-->
+		<div class="sharContent">
+			<div class="mui-table-view-cell" style="margin-bottom: 50px;">
+				<a class="mui-icon mui-pull-left" href="Corrugatedpaper_index.html">
+					<span style="font-size: 15px;">返回</span>
+				</a>
+				<button type="button" class="mui-btn mui-pull-right btnClass"
+					style="background-color: #00522E;border-radius: 40px;">
+					<!-- 我的方案 -->
+					<a href="mine.html" style="color: white;">分享我的展厅</a>
+				</button>
+			</div>
+
+			<div class="shareBox " style="background-image: url(./images/preset1.jpg);background-size: 100% 100%;">
+
+				<button type="button" class="mui-btn mui-pull-right btnClass"
+				style="background-color: #00522E;border-radius: 40px;margin-top: 140px;">
+					<!-- 我的方案 -->
+					<a href="#" style="color: white;">加入预设</a>
+				</button>
+			</div>
+
+		</div>
+
+
+		</header>
+
+		<script src="js/mui.js"></script>
+		<script>
+			mui.init({
+				swipeBack: true //启用右滑关闭功能
+			});
+		</script>
+	</body>
+
+</html>

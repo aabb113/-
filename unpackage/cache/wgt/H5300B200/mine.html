@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport"
+			content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.css" rel="stylesheet" />
+
+		<link href="css/iconfont.css" rel="stylesheet" />
+		<link href="css/mine.css" rel="stylesheet" />
+		<style>
+			* {
+				touch-action: none;
+			}
+		</style>
+		<style type="text/css">
+			/* 修改返回光标的颜色 */
+			.mui-icon-left-nav {
+				color: #B1804f;
+			}
+
+			.borderClass {
+				border: 2px solid #B1804f;
+				border-radius: 12px;
+			}
+
+			.leftBox {
+
+				padding: 10px 10px 10px 10px;
+				height: 200px;
+				width: 50%;
+				/* background-color: aqua; */
+			}
+
+			.containerBox {
+				margin: 10px;
+				background-color: #fff;
+				padding: 10px;
+				width: 95%;
+				height: 220px;
+			}
+
+			.containerBox .rightBox {
+
+				/* 	background-color: #B1804f; */
+				width: 45%;
+				height: 150px;
+				float: right;
+				margin-top: -200px;
+			}
+
+			.rightBox .mui-table-view {
+				background-color: transparent;
+			}
+
+			.spanFont {
+				font-size: 2px;
+			}
+
+			.rightBox .btnClass {
+				position: relative;
+				width: 100%;
+				background-color: #00522E;
+				margin-top: 30px;
+			}
+
+			.mineContent {
+				background-color: white;
+				width: 100%;
+				height: 75%;
+				position: absolute;
+				bottom: 0;
+				border-radius: 15px 15px 0px 0px;
+			}
+		</style>
+
+	</head>
+
+	<body style="background-color:#716d6c;">
+		<!--头部-->
+
+		<div class="mineContent">
+			<div class="mui-table-view-cell" style="border-radius: 15px 15px 0px 0px;">
+				<a class="mui-icon mui-pull-left" href="Corrugatedpaper_index.html">
+					<span style="font-size: 15px;">返回</span>
+				</a>
+			</div>
+			<div class="containerBox borderClass">
+				<div class="borderClass leftBox">
+					<img src="./images/preset1.jpg" alt="qq" width="100%" height="100%">
+				</div>
+				<div class="rightBox">
+					<ul class="mui-table-view">
+						<li class="liClass">
+							<a href="furniture.html" style="color: black;">家具列表
+								<img src="./images/back.png" width="15%" class="mui-pull-right">
+							</a>
+						</li></br>
+						<li><span class="spanFont">模块拼接式展柜</span></li>
+						<li><span class="spanFont">三角形拼接式桌子</span></li>
+						<li><span class="spanFont">单人沙发</span></li>
+						<li><span class="spanFont">6*6展厅</span></li>
+					</ul>
+					<button id="shareHtml" type="button" class="mui-btn mui-pull-right btnClass">
+						<!-- 我的方案 -->
+						<a href="" style="color: white;">分享展厅</a>
+					</button>
+
+				</div>
+			</div>
+		</div>
+
+		<script src="js/mui.js"></script>
+		<script src="js/share.js"></script>
+		<script>
+			mui.init({
+				swipeBack: true //启用右滑关闭功能
+			});
+		</script>
+	</body>
+
+</html>

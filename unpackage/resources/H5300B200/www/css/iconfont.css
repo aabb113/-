@@ -1,0 +1,42 @@
+@font-face {
+	font-family: MuiiconSpread;
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/iconfont.ttf') format('truetype');
+	/* iOS 4.1- */
+}
+
+.iconfont {
+	font-family: MuiiconSpread;
+	font-size: 35px;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 1;
+	display: inline-block;
+	text-decoration: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+.icon-ziliao:before {
+	content: "\100d1";
+}
+
+.icon-erji:before {
+	content: "\100d9";
+}
+
+.icon-jiaju-sofa:before {
+	content: "\e83e";
+}
+
+.icon-jiaju-yizi:before {
+	content: "\e844";
+}
+
+.icon-jiaju:before {
+	content: "\e603";
+}
+
+.icon-jiaju-desk:before {
+	content: "\100da";
+}

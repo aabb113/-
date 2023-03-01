@@ -1,0 +1,438 @@
+/* 界面设置 */
+.mui-col-xs-1,
+.mui-col-sm-1,
+.mui-col-xs-2,
+.mui-col-sm-2,
+.mui-col-xs-3,
+.mui-col-sm-3,
+.mui-col-xs-4,
+.mui-col-sm-4,
+.mui-col-xs-5,
+.mui-col-sm-5,
+.mui-col-xs-6,
+.mui-col-sm-6,
+.mui-col-xs-7,
+.mui-col-sm-7,
+.mui-col-xs-8,
+.mui-col-sm-8,
+.mui-col-xs-9,
+.mui-col-sm-9,
+.mui-col-xs-10,
+.mui-col-sm-10,
+.mui-col-xs-11,
+.mui-col-sm-11,
+.mui-col-xs-12,
+.mui-col-sm-12 {
+	position: relative;
+
+	min-height: 1px;
+}
+
+.mui-col-xs-9 {
+	width: 85%;
+}
+
+.mui-col-xs-3 {
+	width: 15%;
+}
+
+
+
+
+
+
+
+
+#DIY {
+	width: 88%;
+}
+
+/* 修改返回光标的颜色 */
+.mui-icon-left-nav {
+	color: #B1804f;
+}
+
+/* 更多选项设置 */
+.icon-erji {
+	color: #B1804f;
+}
+
+.mui-pull-right {
+	line-height: 44px;
+	font-size: 0.875rem;
+}
+
+.mui-pull-left {
+	line-height: 44px;
+	font-size: 0.875rem;
+}
+
+/* 轮播图 */
+.mui-slider {
+	margin-top: 40px;
+	height: 150px;
+}
+
+/* button 块设置*/
+.button {
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+/*左侧选项卡设置*/
+#leftCard {
+
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#segmentedControlContents {
+	height: 400px;
+	overflow: hidden;
+}
+
+#segmentedControls {
+	margin-right: 20px;
+}
+
+.mui-row.mui-fullscreen {
+	height: 100%;
+	width: 100%;
+	background-color: #716d6c;
+}
+
+.mui-control-content {
+	overflow-y: auto;
+	height: 100%;
+}
+
+.mui-segmented-control .mui-control-item {
+	line-height: 50px;
+	width: 100%;
+}
+
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+	background-color: #fff;
+}
+
+.mui-control-content {
+	overflow-y: auto;
+	height: 100%;
+}
+
+.mui-segmented-control .mui-control-item {
+	line-height: 50px;
+	width: 100%;
+}
+
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+	background-color: #fff;
+}
+
+.imgBox {
+	width: 60%;
+}
+
+.btnExhibition {
+	background-color: #00522E;
+	height: 20px;
+}
+
+.liBox .mui-media {
+	position: relative;
+	left: 10px;
+	top: 25px;
+	/* background-color: aqua; */
+	width: 40%;
+	margin: 0;
+}
+
+.exhibition .btnExhibition {
+	background-color: #00522E;
+	width: 30px;
+	height: 30px;
+	line-height: 0px;
+	/* 	border-radius: 10px; */
+	position: relative;
+	left: 10px;
+	top: 50px;
+
+}
+
+.exhibition .btnChose {
+	background-color: #00522E;
+	width: 100px;
+	height: 20px;
+	line-height: 0px;
+	position: relative;
+	top: 12px;
+	left: 18px;
+}
+
+.mui-control-content {
+	overflow: scroll;
+}
+
+.mui-popover.mui-popover-action.mui-popover-bottom {
+	z-index: 999;
+}
+
+.leftThings {
+	/* 	background-color: aqua; */
+	width: 30%;
+	height: 70px;
+}
+
+.rightThings {
+	/* 	background-color: aqua; */
+	height: 70px;
+	width: 65%;
+}
+
+.rightThings .mui-pull-left {
+	color: black;
+	line-height: 70px;
+}
+
+.rightThings .numBtn {
+	line-height: 0px;
+	color: black;
+	position: relative;
+	top: 20px;
+}
+
+#sofaList1,#sofaList2,#deskList1,#deskList2,#chairList1,#chairList2,#cabinetList1,#cabinetList2,#cabinetList3,#cabinetList4{
+	display: none;
+}
+/* .mui-table-view-cell .mui-media{
+	position: relative;
+	top:10px;
+	left: 100px;
+	
+} */
+
+/* .mui-table-view-cell .mui-numbox{
+	position: relative;
+	top: 10px;
+	left:50px;
+	
+} */
+
+/* 底部选项卡 */
+.mui-bar-tab {
+	bottom: 0;
+
+	display: table;
+
+	width: 100%;
+	height: 50px;
+	padding: 0;
+
+	table-layout: fixed;
+
+	border-top: 0;
+	border-bottom: 0;
+
+	-webkit-touch-callout: none;
+}
+
+#bottomCard {
+	/* border-radius: 100px; */
+	border-top-left-radius: 100px;
+	border-bottom-left-radius: 100px;
+	width: 70%;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	margin-right: 0px;
+	padding-right: 5px;
+	background-color: #00522E;
+}
+
+/* 底部确认选项卡 */
+.bottomCardok {
+	/* border-radius: 100px; */
+	border-top-right-radius: 100px;
+	border-bottom-right-radius: 100px;
+	width: 20%;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	margin-right: 10px;
+	bottom: 0;
+	background-color: #00522E;
+}
+
+
+/* #bottomCardok1{
+	z-index: 2;
+}
+
+#bottomCardok2{
+	z-index: 1;
+} */
+.container {
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	height: 50px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+
+/* 底部已选择菜单 */
+.btnChosed {
+
+	width: 95%;
+	height: 500px;
+	/* background-color: white; */
+
+}
+
+.mui-card .mui-control-content {
+	padding: 10px;
+}
+
+#item1,
+#item2,
+#item3 {
+	height: 150px;
+}
+
+#scroll1 {
+	overflow:scroll;
+}
+
+
+
+/* .mui-popover.mui-bar-popover{
+	margin-left: 10px;
+	margin-right: 10px;
+	height: 200px;
+	width: 90%;
+	position: absolute;
+	bottom: 50px;
+	left: 0;
+} */
+.mui-bar-tab .mui-tab-item .mui-icon {}
+
+.mui-bar-tab .mui-tab-item {}
+
+.mui-popover .mui-popover-arrow {
+
+	overflow: auto;
+}
+
+
+/* #enterMade{
+	display: none;
+} */
+/* 数字角标 */
+.mui-badge {
+	float: right;
+	font-size: 0.0625rem;
+}
+
+/* 用到的列表css样式 */
+/* 常用ul的样式 */
+.mui-table-view {
+	position: relative;
+
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+
+	list-style: none;
+
+	background-color: #fff;
+}
+
+/* 列表li样式 */
+.mui-table-view-cell {
+	position: relative;
+
+	overflow: hidden;
+
+	padding: 11px 15px;
+
+	/* 取消长按显示 */
+	-webkit-touch-callout: none;
+}
+
+/* 内联标签转为块级标签 */
+.mui-control-content.mui-active {
+	display: block;
+}
+
+/* 弹出式窗口 */
+.mui-popover {
+	position: absolute;
+	z-index: 999;
+
+	display: none;
+
+	width: 280px;
+
+	-webkit-transition: opacity .3s;
+	transition: opacity .3s;
+	-webkit-transition-property: opacity;
+	transition-property: opacity;
+	-webkit-transform: none;
+	transform: none;
+
+	opacity: 0;
+	border-radius: 7px;
+	background-color: #f7f7f7;
+	-webkit-box-shadow: 0 0 15px rgba(0, 0, 0, .1);
+	box-shadow: 0 0 15px rgba(0, 0, 0, .1);
+}
+
+/* 单箭头的弹出式窗口 */
+.mui-popover .mui-popover-arrow {
+	position: absolute;
+	z-index: 1000;
+	top: -500px;
+	left: 0;
+
+	overflow: auto;
+
+	width: 26px;
+	height: 26px;
+}
+
+/* 当前弹出式窗口的列ul样式 */
+.mui-popover.mui-bar-popover .mui-table-view {
+	width: 300px;
+}
+
+.mui-popover.mui-bar-popover .mui-table-view .mui-table-view-cell {
+	padding: 11px 15px 11px 15px;
+
+	background-position: 0 100%;
+}
+
+.mui-popover.mui-bar-popover .mui-table-view .mui-table-view-cell>a:not(.mui-btn) {
+	margin: -11px -15px -11px -15px;
+}
+
+/* 底部选项卡的固定位置布置 */
+.mui-bar {
+	position: fixed;
+	z-index: 10;
+	right: 0;
+	left: 0;
+
+	height: 44px;
+	padding-right: 10px;
+	padding-left: 10px;
+
+	border-bottom: 0;
+	background-color: #f7f7f7;
+	-webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .85);
+	box-shadow: 0 0 1px rgba(0, 0, 0, .85);
+
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
